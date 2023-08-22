@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-image: radial-gradient(
+        circle,
+        #1a1a1a,
+        #1e1e1e,
+        #222122,
+        #262525,
+        #2a2929,
+        #2c2b2b,
+        #2f2e2e,
+        #313030,
+        #323131,
+        #333333,
+        #343434,
+        #353535
+    );
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.text {
+    color: white;
+    padding: 5px;
+    font-size: 70px;
+}
+
+.label-hour {
+    color: white;
+    top: 9px;
+    left: 42px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.label-minutes {
+    color: white;
+    top: 9px;
+    left: 154px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.label-seconds {
+    color: white;
+    top: 9px;
+    left: 270px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.label-miliS {
+    color: white;
+    top: 9px;
+    left: 378px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.btns-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    position: absolute;
+    top: 450px;
+}
+
+.btn {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 20px;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+    transition: font-size 0.5s ease;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2e2e2e;
+}
+
+.disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
+
+.disabled:hover {
+    background: none;
+}
